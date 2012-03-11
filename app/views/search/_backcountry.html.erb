@@ -1,0 +1,32 @@
+<% if params[:backcountry] %>
+
+<% doc = Nokogiri::HTML(open(@backcountry_search)) %>
+<div class="storeouter">
+	<h3>Results from Backcountry.com (<%= doc.css('.item').count %>)</h3>
+<div class="storeinner">
+
+
+	<div class="scroll">
+
+<% doc.css('.item').each do |item| %>
+<div class="gearbox">
+	<div class= "gearbox-top">
+<div class="ProductTitle"><h4><%= item.at_css('.brand').content %><%= item.at_css('.title').content %></h4></div>
+	<img src="<%= item.at_css('img')['src'] %>"></img>
+</div>
+
+	<div class="pricebox"><p>
+<% if item.css('.price').css('.sale').css('.price').present? %>
+	<%= item.css('.price').css('.sale').css('.price').text %>
+<% else %>
+	<%= item.css('.price').text%>
+<% end %>
+</p></div>
+
+</div>
+<% end %>
+
+</div>
+</div>
+</div>
+<% end %>

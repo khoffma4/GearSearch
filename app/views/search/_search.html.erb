@@ -1,0 +1,33 @@
+<div id="searchbox">
+
+<%= form_tag("/results", :method => "get") do %>
+
+<div class="field">
+	  <p>Step 1:</p>
+      <%= text_field_tag :keyword, nil, :placeholder=> "Search for gear.." %>
+</div>
+<p>Step 2:</p>
+<%=link_to "Choose Sites", "#", :class => "addsites", :method => "get" %>
+
+<div id="siteselect">
+Sites to include:
+<div class="sponsorcheckbox">
+		<%= label_tag :backcountry, "Backcountry"%>
+	      <%= check_box_tag :backcountry%>
+</div>	
+<div class="sponsorcheckbox">
+		<%= label_tag :rei, "REI"%>
+	      <%= check_box_tag :rei %>
+</div>	
+<div class="sponsorcheckbox">
+		<%= label_tag :evo, "Evo"%>
+	      <%= check_box_tag :evo %>	
+</div>
+</div>
+<p>Step 3:</p>   
+<p class="submit">
+     <%= submit_tag "Search" %>
+   </p>
+
+<% end %>
+</div>

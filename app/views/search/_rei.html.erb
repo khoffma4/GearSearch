@@ -1,0 +1,25 @@
+<% if params[:rei] %>
+
+<% doc = Nokogiri::HTML(open(@rei_search)) %>
+
+<div class="storeouter">
+	<h3>Results from REI.com (<%= doc.css('.productBox').count %>)</h3>
+<div class="storeinner">
+
+	<div class="scroll">
+		
+<% doc.css('.productBox').each do |item| %>
+<div class="gearbox">
+	<div class= "gearbox-top">
+<div class="ProductTitle"><h4><%= item.css('a[itemprop=url]').css('span[itemprop=name]').text %></h4></div>
+	<img src="http://rei.com/<%= item.at_css('a[itemprop=url]').at_css('img')['src'] %>"></img>
+	</div>
+<div class="pricebox"><p><%= item.css('span[itemprop=offers]').css('li[itemprop=price]').text %></p></div>
+</div>
+<% end %>
+
+</div>
+</div>
+</div>
+
+<% end %>

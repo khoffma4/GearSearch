@@ -1,0 +1,10 @@
+// Place all the styles related to the search controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#searchbox {margin:auto; width:900px; text-align:center; height:60px}
+#searchbox h3 {color:#08C}
+#searchbox form input {height:30px; width:300px; border-radius:5px; float:left; font-size:16px}
+#searchbox form input[type="submit"] {height:34px; width:120px; border-radius:5px; float:left; color:white; background:#08C; border:none;}
+#searchbox form .submit input[type="submit"] {height:34px; width:120px; border-radius:5px; float:left; color:white; background:#08C; border:none;}
+#searchbox form a.addsites{height:34px; width:120px; border-radius:5px; float:left; color:white; background:#08C; border:none;; text-decoration:none; line-height:34px; margin:0px 5px }

@@ -1,0 +1,25 @@
+<% if params[:evo] %>
+
+<% doc = Nokogiri::HTML(open(@evo_search)) %>
+
+<div class="storeouter">
+	<h3>Results from Evo.com (<%= doc.css('.hproduct').count %>)</h3>
+<div class="storeinner">
+
+
+	<div class="scroll">
+		
+<% doc.css('.hproduct').each do |item| %>
+<div class="gearbox">
+	<div class= "gearbox-top">
+<div class="ProductTitle"><h4><%= item.css('a').css('.text').text %></h4></div>
+	<img src="http://evo.com/<%= item.at_css('a').at_css('img')['src'] %>"></img>
+	</div>
+	<div class="pricebox"><p><%= item.css('span[class=price]').text %></p></div>
+</div>
+<% end %>
+
+</div>
+</div>
+</div>
+<% end %>
