@@ -20,6 +20,20 @@
 @font-face {
   font-family: 'Lilita One';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: local('Lilita One'), local('LilitaOne'), url('http://themes.googleusercontent.com/static/fonts/lilitaone/v1/4FUUC-PxqHfbmE-DcA6LXL3hpw3pgy2gAi-Ip7WPMi0.woff') format('woff');
 }
+
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+
+::-webkit-scrollbar-track{background-color:#777; border-radius:4px}
+
+::-webkit-scrollbar-thumb { height:5px;
+	border-radius: 4px;
+	background-color: #08C;
+	;
+}
+
