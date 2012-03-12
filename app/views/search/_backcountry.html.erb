@@ -17,7 +17,7 @@
 
 	<div class="pricebox"><p>
 <% if item.css('.price').css('.sale').css('.price').present? %>
-	<%= item.css('.price').css('.sale').css('.price').text %>
+	<%= item.css('.price').css('.sale').css('.price').text.gsub(/Past Season Colors/, '') %>
 <% else %>
 	<%= item.css('.price').text%>
 <% end %>

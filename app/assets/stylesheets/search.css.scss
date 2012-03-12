@@ -2,9 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#searchbox {margin:auto; width:900px; text-align:center; height:60px}
-#searchbox h3 {color:#08C}
-#searchbox form input {height:30px; width:300px; border-radius:5px; float:left; font-size:16px}
-#searchbox form input[type="submit"] {height:34px; width:120px; border-radius:5px; float:left; color:white; background:#08C; border:none;}
-#searchbox form .submit input[type="submit"] {height:34px; width:120px; border-radius:5px; float:left; color:white; background:#08C; border:none;}
-#searchbox form a.addsites{height:34px; width:120px; border-radius:5px; float:left; color:white; background:#08C; border:none;; text-decoration:none; line-height:34px; margin:0px 5px }
+form {margin:none;}
+
+form h3 {color:#08C}
+form p {float:left; margin:0px 10px; line-height:30px}
+
+form .searchbox {margin-left:10px}
+
+form .searchbox .field input {padding-left:10px; height:30px; width:280px; border-radius:5px; float:left; font-size:16px; margin-top:10px}
+
+
+
+form .buttons {width:300px; height:40px; float:left;margin:10px 0px 6px 0px }
+
+
+form .choosesites p {
+	height: 36px;
+	width: 120px;
+	border-radius: 5px;
+	float: left;
+	color: white;
+	background: #08C;
+	border: none;
+	text-decoration: none;
+	line-height: 36px;
+	text-align:center;
+	margin: 0px 0px 0px 10px
+}
+	
+form .submit input[type="submit"] {
+	height: 36px;
+	width: 120px;
+	border-radius: 5px;
+	float: left;
+	color: white;
+	background: #08C;
+	border: none;
+	font-size: 100%;
+}
+
+
+
+form #siteselect {min-height:120px ; margin-top:10px; background: #555; width:102%; margin-left:-1% }
+form #siteselect .sponsors {max-width:200px}
+form #siteselect .sponsors h5 {color:#08C; float:left; margin:10px 10px 10px 30px; font-size:18px }
+form #siteselect .sponsorcheckbox {float:left; width:100%; text-align:left; margin-bottom:5px}
+form #siteselect .sponsorcheckbox label {float:right; color:#fff}
+form #siteselect .sponsorcheckbox input[type="checkbox"] {float:right; width:30px}

@@ -1,9 +1,7 @@
-#content h1 {margin:10px}
+#content h2 {line-height:30px; margin-left:10px}
 
-
-
-.storeouter{background:#222; max-height:340px; margin: 0 0 10px 0; padding:10px; border-radius:10px; width:900px}
-.storeouter h3 {color:#08C; font-size:16px; margin:5px;}
+.storeouter{background:#222; max-height:340px; margin: 0 0 10px 0; padding:5px 10px 5px 10px; border-radius:10px; width:900px}
+.storeouter h3 {color:#08C; font-size:16px; line-height:24px;margin-left:10px}
 .storeouter h4 {font-size:14px; color: #333}
 .storeinner {width:900px; overflow-x:scroll; overflow-y:hidden;}
 

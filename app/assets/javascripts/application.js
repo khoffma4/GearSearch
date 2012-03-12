@@ -16,25 +16,20 @@
 //= require_tree .
 
 
+
+ 
+
 $(function() {
+
   $("#backcountry").prop('checked', true );
   $("#rei").prop('checked', true );
   $("#evo").prop('checked', true );
-  
 
-$("#siteselect").hide();
-  $(".addsites").click(function(e) {
+  $("#siteselect").hide();
+  $(".choosesites").click(function(e) {
     $("#siteselect").toggle();
-    // $("#new_item_link").hide();
     e.preventDefault();
   });
 
-  // $("#cancel_new_aha").click(function(e) {
-  //   $("#new_aha").fadeOut();
-  //   $("#new_item_link").show();
-  //   e.preventDefault();
-  // });
 
-
-  
 });
