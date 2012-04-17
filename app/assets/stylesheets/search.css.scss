@@ -7,19 +7,19 @@ form {margin:none;}
 form h3 {color:#08C}
 form p {float:left; margin:0px 10px; line-height:30px}
 
-form .searchbox {margin-left:10px}
+form .searchbox {margin-left:10px;}
 
-form .searchbox .field input {padding-left:10px; height:30px; width:280px; border-radius:5px; float:left; font-size:16px; margin-top:10px}
+form .searchbox .field input {padding-left:10px; height:30px; width:280px; border-radius:4px; float:left; font-size:16px; margin-top:10px;}
 
 
 
 form .buttons {width:300px; height:40px; float:left;margin:10px 0px 6px 0px }
 
 
-form .choosesites p {
+form .choosesites a {
 	height: 36px;
 	width: 120px;
-	border-radius: 5px;
+	border-radius: 4px;
 	float: left;
 	color: white;
 	background: #08C;
@@ -29,23 +29,35 @@ form .choosesites p {
 	text-align:center;
 	margin: 0px 0px 0px 10px
 }
+
+form .choosesites a:hover {background:#19D}
 	
 form .submit input[type="submit"] {
 	height: 36px;
 	width: 120px;
-	border-radius: 5px;
+	border-radius: 4px;
 	float: left;
 	color: white;
 	background: #08C;
 	border: none;
-	font-size: 100%;
+	font-size:100%;
+	margin:0px;
+	text-align:center;
 }
 
+form .submit input[type="submit"]:hover {background:#19D;}
+	
+form .submit input[type="submit"] p {line-height:36px; font-size:100%}
 
+form #siteselect {min-height:120px ; background: #555; width:101%; margin-left:-1% }
+form #siteselect .sponsors {max-width:200px; float:left}
+form #siteselect .sponsors h5 {color:#08C; float:left; margin:10px 10px 10px 30px; font-size:18px; }
+form #siteselect .sponsorcheckbox {float:left; width:100%; text-align:left; margin-bottom:5px; padding-left:10px}
+form #siteselect .sponsorcheckbox label {float:left; color:#fff}
+form #siteselect .sponsorcheckbox input[type="checkbox"] {float:left; width:30px}
 
-form #siteselect {min-height:120px ; margin-top:10px; background: #555; width:102%; margin-left:-1% }
-form #siteselect .sponsors {max-width:200px}
-form #siteselect .sponsors h5 {color:#08C; float:left; margin:10px 10px 10px 30px; font-size:18px }
-form #siteselect .sponsorcheckbox {float:left; width:100%; text-align:left; margin-bottom:5px}
-form #siteselect .sponsorcheckbox label {float:right; color:#fff}
-form #siteselect .sponsorcheckbox input[type="checkbox"] {float:right; width:30px}
+form #siteselect .non_sponsors { float:left}
+form #siteselect .non_sponsors h5 {color:#08C; float:left; margin:10px 10px 10px 30px; font-size:18px; width:100% }
+form #siteselect .non_sponsorcheckbox {float:left; width:200px; text-align:left; margin-bottom:5px}
+form #siteselect .non_sponsorcheckbox label {float:left; color:#fff}
+form #siteselect .non_sponsorcheckbox input[type="checkbox"] {float:left; width:30px}

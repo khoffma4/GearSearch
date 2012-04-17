@@ -12,15 +12,17 @@
  *= require_self
  *= require_tree .
 */
-*{font-family: 'helvetica neue', helvetica, arial, sans-serif}
-#content {width:970px; margin: 0 auto;}
+
+*{font-family: 'helvetica neue', helvetica, arial, sans-serif;}
+
+#content {width:970px; height:100%; margin: 0 auto;}
 
 .clear {clear:both}
 
 @font-face {
   font-family: 'Lilita One';
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
   src: local('Lilita One'), local('LilitaOne'), url('http://themes.googleusercontent.com/static/fonts/lilitaone/v1/4FUUC-PxqHfbmE-DcA6LXL3hpw3pgy2gAi-Ip7WPMi0.woff') format('woff');
 }
 
@@ -33,7 +35,6 @@
 
 ::-webkit-scrollbar-thumb { height:5px;
 	border-radius: 4px;
-	background-color: #08C;
+	background-color: #fff;
 	;
 }
-

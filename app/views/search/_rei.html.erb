@@ -3,7 +3,7 @@
 <% doc = Nokogiri::HTML(open(@rei_search)) %>
 
 <div class="storeouter">
-	<h3>Results from REI.com (<%= doc.css('.productBox').count %>)</h3>
+	<h3><span class="triangle-left"></span><a href="#">Results from REI.com (<%= doc.css('.productBox').count %>)</a></h3>
 <div class="storeinner">
 
 	<div class="scroll">

@@ -1,0 +1,31 @@
+<% if params[:moosejaw] %>
+
+<% doc = Nokogiri::HTML(open(@moosejaw_search)) %>
+
+<div class="storeouter">
+	<h3><span class="triangle-left"></span><a href="#">Results from Moosejaw (<%= doc.css('.product-condensed').count %>)</a></h3>
+	<div class="storeinner">
+
+
+		<div class="scroll">
+
+			<% doc.css('.product-condensed').each do |item| %>
+			<div class="gearbox">
+				<div class= "gearbox-top">
+					<div class="ProductTitle"><h4><%= item.css('h4').css('.a').text %></h4></div>
+					<img src="<%= item.at_css('.svg-qv-wrapper').at_css('img')['src'] %>"></img>
+				</div>
+				<div class="pricebox"><p>
+					<% if item.css('.on-sale').present? %>
+					<%= item.css('.on-sale').text %>
+					<% else %>
+					<%= item.css('.non-sale').text%>
+					<% end %>
+				</p></div>
+			</div>
+			<% end %>
+
+		</div>
+	</div>
+</div>
+<% end %>

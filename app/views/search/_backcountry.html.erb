@@ -2,7 +2,7 @@
 
 <% doc = Nokogiri::HTML(open(@backcountry_search)) %>
 <div class="storeouter">
-	<h3>Results from Backcountry.com (<%= doc.css('.item').count %>)</h3>
+	<h3><span class="triangle-left"></span><a href="#">Results from Backcountry.com (<%= doc.css('.item').count %>)</a></h3>
 <div class="storeinner">
 
 

@@ -15,8 +15,6 @@
 //= require jquery_ujs
 //= require_tree .
 
-
-
  
 
 $(function() {
@@ -30,6 +28,11 @@ $(function() {
     $("#siteselect").toggle();
     e.preventDefault();
   });
+
+	$('#accordion h3').click(function() {
+		$(this).next().toggle();
+		return false;
+	}).next().hide();
 
 
 });

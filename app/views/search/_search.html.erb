@@ -2,12 +2,12 @@
 	
 		<div class="searchbox">
 			<div class="field">
-      			<%= text_field_tag :keyword, nil, :placeholder=> "Search for gear.." %>
+      			<%= text_field_tag :keyword, nil, :placeholder=> "Search for gear..." %>
 			</div>
 		</div>
 		<div class="buttons">
 			<div class="choosesites">
-				<p>Choose Sites</p>
+				<a href="#">Choose Sites</a>
 			</div>
  		
 			<div class="submit">
@@ -19,7 +19,7 @@
 
 	<div id="siteselect">
 		<%= render 'sponsors' %>
-		<%= render 'othersites' %>
+		<%= render 'non_sponsors' %>
 	</div>
 
 	<% end %>
